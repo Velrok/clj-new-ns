@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
+
+require 'clj_new_ns'
+require 'docopt'
+doc = <<DOCOPT
+Automated semantic tagging for git.
+
+Usage:
+  #{__FILE__} current
+  #{__FILE__} inc (major | minor | patch)
+DOCOPT
